@@ -57,8 +57,8 @@ parser = argparse.ArgumentParser(description='Flower Image Classifier')
     
 parser.add_argument('image_path', type=str, default=None, help='Path for the image')
 parser.add_argument('model', type=str, default=None, help='Load the model')
-parser.add_argument('--top_k', type=int, default=5, help='Top K probabilities', action = "store")
-parser.add_argument('--category_names', type=str, default='label_map.json', help='Path for JSON file that maps names to categories',  action = "store")
+parser.add_argument('-k', '--top_k', type=int, default=5, help='Top K probabilities', action = "store")
+parser.add_argument('-c', '--category_names', type=str, default='label_map.json', help='Path for JSON file that maps names to categories',  action = "store")
 args = (parser.parse_args())
   
 if __name__ == '__main__':
