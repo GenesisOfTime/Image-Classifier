@@ -5,4 +5,4 @@ To use the predict.py program using the terminal, formulate your input in the fo
 
 *python predict.py (image path) (model file name) -k ((integer) the top k probabilities for the flower's type) -c (the label mapping file)*
  
-- -k and -c are optional and are by default respectively 5 and label_map.json
+- -k and -c are optional and are by default 5 and label_map.json respectively.
